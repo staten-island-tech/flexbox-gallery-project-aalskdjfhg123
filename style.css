@@ -112,20 +112,19 @@ h2 {
 
 }
 
-@keyframes spin-huh{
+@keyframes groot{
+    from{
+        transform: translate(0px, 0px);
+    }
+    to{
+        transform: translate(0px, 40px);
+    }
     
-    50%{
-        transform: matrix(0.1, 1, -0.3, 1, 0, 0);
-       
-    }
-    100%{
-        transform: matrix(1,1,1,1,1,1);
-    }
 }
 
 #groot:hover{
-    animation-name: spin-huh;
-    animation-duration: 2s;
+    animation-name: groot;
+    animation-duration: 20ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   
@@ -147,3 +146,11 @@ h2 {
     animation-timing-function: linear;
   
 }
+
+
+@media screen and (max-width: 600px) {
+    .card{
+        width: 100%;
+    }
+}
+
